@@ -1,0 +1,99 @@
+\documentclass{article}
+\usepackage[italian]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=2.5cm}
+
+\title{Propagazione del Potenziale d'Azione}
+\author{Orcam}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Propagazione dei Segnali Elettrici}
+\subsection{Teoria del Cavo}
+La propagazione passiva dei segnali elettrici è regolata dalle proprietà capacitive (\(C_m\)) e resistive (\(R_m\)) della membrana neuronale. Il modello include:
+\begin{itemize}
+    \item Componenti resistive (\(R_{m}\), \(R_p\)) e capacitive (\(C_m\)) in parallelo.
+    \item Resistenza longitudinale (\(R_l\)) nel citoplasma.
+\end{itemize}
+
+% Inserire immagine: Modello circuito equivalente della membrana (Pag.1)
+
+\subsection{Potenziali Elettrotonici}
+\begin{itemize}
+    \item Decadono con la distanza secondo: 
+    \[
+    V_x = V_0 e^{-x/\lambda} \quad \text{dove} \quad \lambda = \sqrt{\frac{R_m}{R_l}}
+    \]
+    \item \(\lambda\) (costante di spazio): distanza a cui \(V_m\) decade al 37\% di \(V_0\).
+    \item Corrente dispersa attraverso \(R_m\) (membrana) e \(R_l\) (assoplasma).
+\end{itemize}
+
+% Inserire immagine: Decadimento esponenziale del potenziale (Pag.2)
+
+\section{Potenziale d'Azione (PA)}
+\subsection{Caratteristiche Principali}
+\begin{itemize}
+    \item \textbf{Non decade} con la distanza (meccanismo attivo).
+    \item Generato da canali \(Na^+\) voltaggio-dipendenti che si aprono localmente.
+    \item Ciclo rigenerativo (Hodgkin):
+    \begin{enumerate}
+        \item Depolarizzazione iniziale \(\rightarrow\) apertura canali \(Na^+\).
+        \item Ingresso \(Na^+\) \(\rightarrow\) ulteriore depolarizzazione.
+        \item Apertura canali \(K^+\) \(\rightarrow\) ripolarizzazione.
+    \end{enumerate}
+\end{itemize}
+
+% Inserire immagine: Ciclo di Hodgkin (Pag.5)
+
+\subsection{Propagazione Unidirezionale}
+\begin{itemize}
+    \item La corrente depolarizzante fluisce verso segmenti adiacenti.
+    \item Periodo refrattario impedisce retropropagazione.
+    \item Meccanismo a "domino": ogni segmento attiva il successivo.
+\end{itemize}
+
+% Inserire immagine: Propagazione unidirezionale (Pag.6-7)
+
+\section{Fattori che Influenzano la Velocità di Conduzione}
+\subsection{Diametro Assonale}
+\begin{itemize}
+    \item Assoni più grandi \(\rightarrow\) minore \(R_l\) \(\rightarrow\) maggiore \(\lambda\):
+    \[
+    \lambda \propto \sqrt{r} \quad (r = \text{raggio assonale})
+    \]
+    \item Velocità aumenta con il diametro (es.: assoni giganti di calamaro).
+\end{itemize}
+
+% Inserire immagine: Relazione diametro-velocità (Pag.14-15)
+
+\subsection{Guaina Mielinica}
+\begin{itemize}
+    \item \textbf{Effetti della mielina}:
+    \begin{itemize}
+        \item Aumenta \(R_m\) e riduce \(C_m\) \(\rightarrow\) migliora efficienza.
+        \item Conduzione saltatoria: PA si rigenerano solo ai nodi di Ranvier.
+    \end{itemize}
+    \item Velocità raggiunge 120 m/s (vs. 0.5-2 m/s in assoni amielinici).
+\end{itemize}
+
+% Inserire immagine: Conduzione saltatoria (Pag.19-20)
+
+\section{Codifica dell'Intensità dello Stimolo}
+\begin{itemize}
+    \item \textbf{Legge del tutto-o-nulla}: l'ampiezza del PA è costante.
+    \item L'intensità è codificata nella \textbf{frequenza} dei PA:
+    \begin{itemize}
+        \item Stimoli più intensi \(\rightarrow\) maggiore frequenza.
+    \end{itemize}
+\end{itemize}
+
+% Inserire immagine: Frequenza PA e intensità stimolo (Pag.8-10)
+
+% Inserire immagine: Confronto assoni mielinizzati/amielinici (Pag.21)
+
+\end{document}

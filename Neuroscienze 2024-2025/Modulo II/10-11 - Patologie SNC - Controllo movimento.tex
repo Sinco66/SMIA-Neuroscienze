@@ -1,0 +1,176 @@
+\documentclass{article}
+\usepackage[italian]{babel}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage[margin=1in]{geometry}
+
+\title{Patologie del SNC e Controllo movimento}
+\author{Orcam}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Malattia di Alzheimer}
+\subsection{Epidemiologia}
+\begin{itemize}
+    \item 50 milioni di casi globali (60\% in paesi a basso-medio reddito)
+    \item Prevalenza: 5-8\% popolazione $\geq$60 anni
+    \item Proiezione: 82 milioni (2030), 152 milioni (2050)
+    \item Rappresenta 60-70\% dei casi di demenza
+\end{itemize}
+
+% Spazio per Figura 1: Distribuzione per età
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figura1_distribuzione_eta}
+    \caption{Distribuzione per età dei pazienti con Alzheimer (2019)}
+    \label{fig:alzheimer_eta}
+\end{figure}
+
+\subsection{Sintomi}
+10 segni principali:
+\begin{enumerate}
+    \item Perdita di memoria
+    \item Difficoltà nelle attività quotidiane
+    \item Problemi linguistici
+    \item Disorientamento spazio-temporale
+    \item Alterazione del giudizio
+    \item Difficoltà nel ragionamento astratto
+    \item Smarrimento oggetti
+    \item Cambiamenti d'umore
+    \item Problemi visuo-spaziali
+    \item Ritiro sociale
+\end{enumerate}
+
+\subsection{Istopatologia}
+Tre caratteristiche principali:
+\begin{itemize}
+    \item \textbf{Placche amiloidi}: Aggregati extracellulari di peptide Aβ
+    \item \textbf{Grovigli neurofibrillari}: Aggregati intracellulari di proteina tau iperfosforilata
+    \item \textbf{Atrofia cerebrale}: Perdita neuronale, ventricoli dilatati, solchi allargati
+\end{itemize}
+
+% Spazio per Figura 2: Confronto cervello sano/Alzheimer
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figura2_atrofia_cerebrale}
+    \caption{Confronto tra cervello sano e con Alzheimer avanzato}
+    \label{fig:atrofia_cerebrale}
+\end{figure}
+
+\subsection{Fattori genetici}
+\begin{itemize}
+    \item \textbf{Sporadico (95\%)}: Gene di rischio ApoEε4
+    \item \textbf{Familiare (5\%)}: Mutazioni in APP, PSEN1, PSEN2
+\end{itemize}
+
+\subsection{Terapie}
+\begin{itemize}
+    \item \textbf{Sintomatiche}: Inibitori colinesterasi (Donepezil), Antagonisti NMDA (Memantina)
+    \item \textbf{Modificanti}: Anticorpi monoclonali anti-amiloide (Aducanumab, Lecanemab)
+\end{itemize}
+
+\section{Interfaccia Cervello-Macchina (BMI)}
+\subsection{Definizione e funzioni}
+Dispositivi che misurano/modificano l'attività neurale per:
+\begin{itemize}
+    \item Ripristinare capacità sensoriali/motorie
+    \item Modulare attività patologica
+    \item Controllare dispositivi esterni (arti robotici, computer)
+\end{itemize}
+
+\subsection{Implementazione}
+\begin{itemize}
+    \item Elettrodi impiantati in aree motorie
+    \item Decodifica dell'attività neurale in comandi
+    \item Applicazioni: controllo computer, arti robotici, stimolazione muscolare
+\end{itemize}
+
+% Spazio per Figura 3: Schema BMI
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figura3_schema_bmi}
+    \caption{Schema di interfaccia cervello-macchina per il controllo motorio}
+    \label{fig:bmi_schema}
+\end{figure}
+
+\section{Sistema Motorio}
+\subsection{Organizzazione gerarchica}
+\begin{itemize}
+    \item \textbf{Livello corticale}: Pianificazione movimento volontario
+    \item \textbf{Gangli della base}: Selezione movimenti
+    \item \textbf{Cervelletto}: Coordinazione e correzione errori
+    \item \textbf{Tronco encefalico}: Controllo postura e movimenti automatici
+    \item \textbf{Midollo spinale}: Circuiti locali per riflessi e CPG
+\end{itemize}
+
+% Spazio per Figura 4: Gerarchia motoria
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{figura4_gerarchia_motoria}
+    \caption{Organizzazione gerarchica del sistema motorio}
+    \label{fig:gerarchia_motoria}
+\end{figure}
+
+\subsection{Unità Motoria}
+\begin{itemize}
+    \item Motoneurone + fibre muscolari innervate
+    \item \textbf{Principio della dimensione}: Reclutamento unità piccole $\rightarrow$ grandi
+    \item Tipi fibre: Lente (S), Veloci resistenti (FR), Veloci affaticabili (FF)
+\end{itemize}
+
+\subsection{Riflessi}
+\begin{itemize}
+    \item \textbf{Monosinaptici}: Riflesso patellare (feedback antigravitazionale)
+    \item \textbf{Polisinaptici}: Riflesso di ritrazione (risposta a stimoli nocicettivi)
+\end{itemize}
+
+\subsection{Movimenti Ritmici}
+\begin{itemize}
+    \item Controllati da Central Pattern Generators (CPG) spinali
+    \item Attivati dalla Regione Locomotoria Mesencefalica (MLR)
+    \item Esempi: Camminata, trotto, galoppo
+\end{itemize}
+
+% Spazio per Figura 5: CPG locomozione
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figura5_cpg_locomozione}
+    \caption{Generatori centrali di pattern per la locomozione}
+    \label{fig:cpg_locomozione}
+\end{figure}
+
+\section{Patologie del Controllo Motorio}
+\subsection{Sclerosi Laterale Amiotrofica (SLA)}
+\begin{itemize}
+    \item Degenerazione motoneuroni superiori e inferiori
+    \item Sintomi: Debolezza muscolare, fascicolazioni, disfagia
+    \item Terapie: Riluzolo, Edaravone, supporto ventilatorio
+\end{itemize}
+
+\subsection{Morbo di Parkinson}
+\begin{itemize}
+    \item Perdita neuroni dopaminergici nella substantia nigra
+    \item Sintomi: Tremori, rigidità, bradicinesia
+    \item Terapie: L-DOPA, stimolazione cerebrale profonda
+\end{itemize}
+
+\subsection{Atassie Cerebellari}
+\begin{itemize}
+    \item Deficit coordinazione motoria e equilibrio
+    \item Cause: Ictus, traumi, mutazioni genetiche (es. SCA)
+\end{itemize}
+
+% Spazio per Figura 6: Confronto sindromi motorie
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figura6_sindromi_motorie}
+    \caption{Confronto tra lesioni motoneuroni superiori e inferiori}
+    \label{fig:sindromi_motorie}
+\end{figure}
+
+\end{document}

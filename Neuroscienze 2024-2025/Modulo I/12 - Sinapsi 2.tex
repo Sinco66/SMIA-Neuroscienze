@@ -1,0 +1,195 @@
+\documentclass{article}
+\usepackage[italian]{babel}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{multirow}
+\usepackage[margin=1in]{geometry}
+
+\title{Riassunto: Sinapsi II}
+\author{Orcam}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Risposte Postsinaptiche}
+\subsection{Tipi di Potenziali}
+\begin{itemize}
+\item \textbf{EPSP} (Potenziali Postsinaptici Eccitatori): depolarizzanti
+\item \textbf{IPSP} (Potenziali Postsinaptici Inibitori): iperpolarizzanti
+\end{itemize}
+
+\subsection{Meccanismi di Generazione}
+\begin{itemize}
+\item Legame del neurotrasmettitore a recettori postsinaptici
+\item Generazione di correnti ioniche sinaptiche
+\item Natura eccitatoria/inibitoria determinata da:
+  \begin{itemize}
+  \item Tipo di recettore
+  \item Gradienti ionici
+  \item Non dal neurotrasmettitore in sé
+  \end{itemize}
+\end{itemize}
+
+% Spazio per Figura 1: EPSP vs IPSP
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{figura1_epsp_ipsp}
+\caption{Correnti ioniche nei potenziali postsinaptici}
+\label{fig:epsp_ipsp}
+\end{figure}
+
+\section{Recettori Postsinaptici}
+\subsection{Confronto Recettori}
+\begin{table}[h]
+\centering
+\caption{Confronto tra recettori ionotropi e metabotropi}
+\begin{tabular}{p{5cm}p{5cm}}
+\toprule
+\textbf{Recettori Ionotropi} & \textbf{Recettori Metabotropi} \\
+\midrule
+• Canali ionici ligando-dipendenti & • Attivano proteine G \\
+• Risposta rapida (ms) & • Risposta lenta (s) \\
+• Trasmissione diretta & • Trasduzione del segnale \\
+• Esempi: nAChR, AMPA, NMDA & • Esempi: mAChR, recettori glutammato metabotropi \\
+\bottomrule
+\end{tabular}
+\label{tab:recettori}
+\end{table}
+
+\subsection{Eterogeneità Recettoriale}
+\begin{itemize}
+\item Ogni neurotrasmettitore ha molteplici recettori
+\item Esempi:
+  \begin{itemize}
+  \item \textbf{Acetilcolina}: Recettori nicotinici (ionotropi) e muscarinici (metabotropi)
+  \item \textbf{Glutammato}: Recettori AMPA, NMDA (ionotropi), mGluR (metabotropi)
+  \item \textbf{GABA}: Recettori GABA-A (ionotropi), GABA-B (metabotropi)
+  \end{itemize}
+\end{itemize}
+
+% Spazio per Figura 2: Diversità recettoriale
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{figura2_diversita_recettori}
+\caption{Eterogeneità dei recettori per acetilcolina e glutammato}
+\label{fig:diversita_recettori}
+\end{figure}
+
+\section{Modulazione Sinaptica}
+\subsection{Regolazione Recettori}
+\begin{itemize}
+\item Numero di recettori regolato dall'attività sinaptica
+\item \textbf{Aumento attività}: Reclutamento recettori (esocitosi)
+\item \textbf{Riduzione attività}: Rimozione recettori (endocitosi)
+\end{itemize}
+
+\subsection{Modulazione Presinaptica}
+\begin{itemize}
+\item \textbf{Sinapsi asso-assoniche}: Modulano il rilascio di neurotrasmettitore
+\item \textbf{Meccanismi}:
+  \begin{itemize}
+  \item Facilitazione (aumento Ca\textsuperscript{2+})
+  \item Inibizione (blocco Ca\textsuperscript{2+})
+  \end{itemize}
+\item Permette modulazione \textbf{selettiva} di bersagli specifici
+\end{itemize}
+
+% Spazio per Figura 3: Modulazione presinaptica
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{figura3_modulazione}
+\caption{Meccanismo di inibizione presinaptica selettiva}
+\label{fig:modulazione}
+\end{figure}
+
+\section{Integrazione Sinaptica}
+\subsection{Sommazione Spaziale e Temporale}
+\begin{table}[h]
+\centering
+\caption{Confronto sommazione spaziale e temporale}
+\begin{tabular}{p{6cm}p{6cm}}
+\toprule
+\textbf{Sommazione Spaziale} & \textbf{Sommazione Temporale} \\
+\midrule
+• Input simultanei da sinapsi diverse & • Input successivi dalla stessa sinapsi \\
+• Somma di correnti sinaptiche & • Somma di potenziali postsinaptici \\
+• Efficacia dipende dalla costante di spazio λ & • Efficacia dipende dalla costante di tempo τ \\
+\bottomrule
+\end{tabular}
+\label{tab:sommazione}
+\end{table}
+
+\subsection{Integrazione Neuronale}
+\begin{itemize}
+\item I potenziali postsinaptici sono graduati e locali
+\item Devono propagarsi al cono di emergenza assonale per generare PA
+\item Integrazione = somma pesata di input eccitatori e inibitori
+\item Sinapsi inibitorie spesso localizzate sul soma per massima efficacia
+\end{itemize}
+
+% Spazio per Figura 4: Integrazione sinaptica
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{figura4_integrazione}
+\caption{Processo di integrazione sinaptica nel neurone}
+\label{fig:integrazione}
+\end{figure}
+
+\section{Fattori che Influenzano la Forza Sinaptica}
+\begin{table}[h]
+\centering
+\caption{Fattori che determinano l'efficacia sinaptica}
+\begin{tabular}{p{4cm}p{10cm}}
+\toprule
+\textbf{Fattore} & \textbf{Descrizione} \\
+\midrule
+\textbf{Presinaptici} & 
+\begin{itemize}
+\item Disponibilità neurotrasmettitore
+\item Concentrazione Ca\textsuperscript{2+}
+\item Attivazione recettori presinaptici (autorecettori)
+\end{itemize} \\
+\midrule
+\textbf{Postsinaptici} & 
+\begin{itemize}
+\item Stato elettrico della membrana
+\item Regolazione recettori (up/down-regulation)
+\item Desensibilizzazione recettori
+\end{itemize} \\
+\midrule
+\textbf{Generali} & 
+\begin{itemize}
+\item Area di contatto sinaptico
+\item Degradazione enzimatica
+\item Geometria della diffusione
+\item Ricaptazione neurotrasmettitore
+\end{itemize} \\
+\bottomrule
+\end{tabular}
+\label{tab:forza_sinaptica}
+\end{table}
+
+\section{Neuromodulazione}
+\subsection{Meccanismi}
+\begin{itemize}
+\item Diversi neurotrasmettitori rilasciati con tempi diversi:
+  \begin{itemize}
+  \item Neurotrasmettitori classici: effetto rapido (ms)
+  \item Neuropeptidi: effetto lento (s)
+  \end{itemize}
+\item Esempio: Risposte colinergiche con diverse componenti temporali
+\item Coinvolge sia recettori postsinaptici che presinaptici
+\end{itemize}
+
+% Spazio per Figura 5: Neuromodulazione
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{figura5_neuromodulazione}
+\caption{Esempio di neuromodulazione in sinapsi colinergica}
+\label{fig:neuromodulazione}
+\end{figure}
+
+\end{document}

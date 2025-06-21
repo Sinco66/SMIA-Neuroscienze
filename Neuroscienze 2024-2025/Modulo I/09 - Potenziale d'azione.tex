@@ -1,0 +1,148 @@
+\documentclass{article}
+\usepackage[italian]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{siunitx}
+
+\title{Potenziale d'azione}
+\author{Orcam}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+% Sezione 1: Tecnica del Voltage Clamp
+\section{Tecnica del Voltage Clamp}
+\begin{itemize}
+\item Permette di misurare correnti ioniche mantenendo \( V_m \) costante:
+\[
+I = g \cdot (V_m - E_x) \quad \text{(Legge di Ohm generalizzata)}
+\]
+
+\item Componenti chiave:
+  \begin{itemize}
+  \item Amplificatore di confronto
+  \item Elettrodo di corrente
+  \item Potenziale di comando (\( V_c \))
+  \end{itemize}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{voltage_clamp.png}
+\caption{Schema del sistema voltage clamp}
+\label{fig:clamp}
+\end{figure}
+\end{itemize}
+
+% Sezione 2: Basi ioniche del potenziale d'azione
+\section{Basi ioniche del potenziale d'azione}
+\begin{itemize}
+\item Dinamiche delle correnti:
+  \begin{itemize}
+  \item \textbf{Corrente precoce entrante}: mediata da Na\(^+\) (\( I_{Na} \))
+  \item \textbf{Corrente tardiva uscente}: mediata da K\(^+\) (\( I_K \))
+  \end{itemize}
+
+\item Equazioni delle correnti:
+\[
+I_{Na} = g_{Na} \cdot (V_m - E_{Na}) \quad;\quad I_K = g_K \cdot (V_m - E_K)
+\]
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{correnti_ioniche.png}
+\caption{Andamento temporale delle correnti Na\(^+\) e K\(^+\)}
+\label{fig:correnti}
+\end{figure}
+\end{itemize}
+
+% Sezione 3: Canali voltaggio-dipendenti
+\section{Canali voltaggio-dipendenti}
+\subsection{Canale del Na\(^+\)}
+\begin{itemize}
+\item Struttura:
+  \begin{itemize}
+  \item 4 domini (I-IV) con sensori di voltaggio (S4)
+  \item Cancello di inattivazione (ansa tra domini III e IV)
+  \end{itemize}
+
+\item Stati conformazionali:
+  \begin{enumerate}
+  \item Chiuso (a riposo)
+  \item Aperto (durante depolarizzazione)
+  \item Inattivo (post-apertura)
+  \end{enumerate}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{canale_na.png}
+\caption{Struttura e stati del canale Na\(^+\)}
+\label{fig:canale_na}
+\end{figure}
+\end{itemize}
+
+\subsection{Canale del K\(^+\) (DRK)}
+\begin{itemize}
+\item Caratteristiche:
+  \begin{itemize}
+  \item Apertura ritardata
+  \item Nessun cancello di inattivazione
+  \item Contribuisce alla ripolarizzazione
+  \end{itemize}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{canale_k.png}
+\caption{Canale K\(^+\) delayed rectifier}
+\label{fig:canale_k}
+\end{figure}
+\end{itemize}
+
+% Sezione 4: Periodo refrattario
+\section{Periodo refrattario}
+\begin{itemize}
+\item \textbf{Refrattarietà assoluta}:
+  \begin{itemize}
+  \item Canali Na\(^+\) inattivati
+  \item Impossibilità di generare nuovi PA
+  \end{itemize}
+
+\item \textbf{Refrattarietà relativa}:
+  \begin{itemize}
+  \item Ripristino parziale dei canali Na\(^+\)
+  \item Soglia di attivazione elevata
+  \end{itemize}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{refrattarieta.png}
+\caption{Fasi refrattarie durante il PA}
+\label{fig:refrattario}
+\end{figure}
+\end{itemize}
+
+% Sezione 5: Modello di Hodgkin-Huxley
+\section{Modello di Hodgkin-Huxley}
+\begin{itemize}
+\item Equazioni fondamentali:
+\[
+g_{Na} = \bar{g}_{Na} \cdot m^3 h \quad;\quad g_K = \bar{g}_K \cdot n^4
+\]
+\item Variabili:
+  \begin{itemize}
+  \item \( m \): Attivazione Na\(^+\)
+  \item \( h \): Inattivazione Na\(^+\)
+  \item \( n \): Attivazione K\(^+\)
+  \end{itemize}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{hodgkin_huxley.png}
+\caption{Modello matematico della conduzione assonica}
+\label{fig:hodgkin}
+\end{figure}
+\end{itemize}
+
+\end{document}

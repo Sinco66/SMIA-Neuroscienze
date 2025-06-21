@@ -1,0 +1,202 @@
+\documentclass[11pt]{article}
+\usepackage[italian]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{multirow}
+\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2.5cm}
+
+\title{Anatomia SNC II}
+\author{Orcam}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Sistemi di protezione del SNC}
+
+\subsection*{Strutture ossee}
+\begin{itemize}
+    \item Scatola cranica (protegge l'encefalo)
+    \item Colonna vertebrale (protegge il midollo spinale)
+    \item Forame magno (passaggio tra encefalo e midollo spinale)
+\end{itemize}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{ossa_craniche} % Inserire immagine
+    \caption{Ossa craniche e forame magno}
+    \label{fig:ossa}
+\end{figure}
+
+\subsection*{Meningi}
+Strutture connettivali a tre strati:
+\begin{enumerate}
+    \item \textbf{Dura madre}: Doppio strato (encefalo), singolo strato (midollo), ricca di collagene
+    \item \textbf{Aracnoide}: Priva di collagene, delimita spazio subaracnoideo
+    \item \textbf{Pia madre}: Aderente al tessuto nervoso
+\end{enumerate}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{meningi} % Inserire immagine
+    \caption{Struttura delle meningi cerebrali e spinali}
+    \label{fig:meningi}
+\end{figure}
+
+\subsection*{Liquido Cefalorachidiano (CSF)}
+\begin{itemize}
+    \item Prodotto dai plessi coroidei (500 ml/giorno)
+    \item Volume totale: 90-140 ml
+    \item Composizione: basso contenuto proteico, alto Na+, basso K+
+    \item Funzioni:
+    \begin{itemize}
+        \item Protezione meccanica
+        \item Scambio di sostanze
+        \item Rimozione metaboliti
+        \item Stabilità ionica
+    \end{itemize}
+    \item Flusso: Ventricoli $\rightarrow$ spazio subaracnoideo $\rightarrow$ villi aracnoidei $\rightarrow$ seni venosi
+\end{itemize}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{plesso_coroideo} % Inserire immagine
+    \caption{Plesso coroideo e flusso del CSF}
+    \label{fig:csf}
+\end{figure}
+
+\subsection*{Barriera Emato-Encefalica (BBB)}
+\begin{itemize}
+    \item Struttura specializzata dei capillari cerebrali
+    \item Componenti principali:
+    \begin{itemize}
+        \item Cellule endoteliali con tight junctions
+        \item Periciti
+        \item Astrociti
+        \item Membrana basale
+    \end{itemize}
+    \item Funzione: selettività per sostanze
+\end{itemize}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{barriera_encefalica} % Inserire immagine
+    \caption{Struttura della barriera emato-encefalica}
+    \label{fig:bbb}
+\end{figure}
+
+\section*{Organizzazione del Sistema Nervoso Periferico}
+
+\subsection*{Divisioni principali}
+\begin{table}[h]
+\centering
+\caption{Classificazione del SNP}
+\begin{tabular}{p{6cm}p{8cm}}
+\toprule
+\textbf{Sistema somatico} & \textbf{Sistema autonomo} \\
+\midrule
+Innerva muscoli scheletrici, organi di senso e cute & Innerva muscoli lisci, muscolo cardiaco e ghiandole \\
+Controllo volontario & Controllo involontario \\
+Afferenze da cute, muscoli, articolazioni & Afferenze da organi interni \\
+Efferenze motorie somatiche & Efferenze motorie viscerali (simpatico, parasimpatico, enterico) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection*{Nervi cranici}
+12 paia con funzioni specifiche:
+\begin{table}[h]
+\centering
+\caption{Classificazione nervi cranici}
+\begin{tabular}{lll}
+\toprule
+\textbf{Tipo} & \textbf{Nervi} & \textbf{Funzione principale} \\
+\midrule
+Sensitivi & I (olfattivo), II (ottico), VIII (vestibolococleare) & Olfatto, vista, udito/equilibrio \\
+Motori & III (oculomotore), IV (trocleare), VI (abducente), XI (accessorio), XII (ipoglosso) & Movimento occhi, collo, lingua \\
+Misti & V (trigemino), VII (facciale), IX (glossofaringeo), X (vago) & Sensibilità/motilità facciale, deglutizione, innervazione viscerale \\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{nervi_cranici} % Inserire immagine
+    \caption{Decorso dei nervi cranici}
+    \label{fig:nervi_cranici}
+\end{figure}
+
+\subsection*{Nervi spinali}
+31 paia organizzate in:
+\begin{itemize}
+    \item 8 cervicali (C1-C8)
+    \item 12 toracici (T1-T12)
+    \item 5 lombari (L1-L5)
+    \item 5 sacrali (S1-S5)
+    \item 1 coccigeo (Co)
+\end{itemize}
+Struttura di un nervo spinale:
+\begin{itemize}
+    \item Radice dorsale (sensitiva)
+    \item Radice ventrale (motoria)
+    \item Ganglio della radice dorsale (corpi cellulari neuroni sensitivi)
+\end{itemize}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{nervi_spinali} % Inserire immagine
+    \caption{Struttura dei nervi spinali}
+    \label{fig:nervi_spinali}
+\end{figure}
+
+\subsection*{Sensibilità}
+\begin{itemize}
+    \item \textbf{Somatica}:
+    \begin{itemize}
+        \item Esterocettiva (tatto, temperatura, dolore)
+        \item Propriocettiva (posizione corporea)
+    \end{itemize}
+    \item \textbf{Speciale}: vista, udito, olfatto, gusto
+    \item \textbf{Vestibolare}: posizione/movimento testa
+    \item \textbf{Viscerale}: segnali da organi interni
+\end{itemize}
+
+\subsection*{Sistema Nervoso Autonomo}
+Divisione efferente viscerale:
+\begin{table}[h]
+\centering
+\caption{Confronto sistema simpatico e parasimpatico}
+\begin{tabular}{p{7cm}p{7cm}}
+\toprule
+\textbf{Simpatico} & \textbf{Parasimpatico} \\
+\midrule
+Attivazione ("lotta o fuga") & Conservazione energia ("riposo e digestione") \\
+Origine: midollo spinale toraco-lombare & Origine: tronco encefalico e midollo sacrale \\
+Gangli paravertebrali e prevertebrali & Gangli vicino agli organi bersaglio \\
+Neurotrasmettitore: noradrenalina & Neurotrasmettitore: acetilcolina \\
+\bottomrule
+\end{tabular}
+\end{table}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{sistema_autonomo} % Inserire immagine
+    \caption{Organizzazione del sistema nervoso autonomo}
+    \label{fig:autonomo}
+\end{figure}
+
+\subsection*{Sistema Nervoso Enterico}
+Rete neuronale autonoma per il tratto gastrointestinale:
+\begin{itemize}
+    \item \textbf{Plesso di Auerbach}: controllo motilità muscolare
+    \item \textbf{Plesso di Meissner}: controllo secrezioni ghiandolari
+    \item Integrazione con sistema autonomo (simpatico e parasimpatico)
+\end{itemize}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{sistema_enterico} % Inserire immagine
+    \caption{Innervazione del tratto gastrointestinale}
+    \label{fig:enterico}
+\end{figure}
+
+\end{document}

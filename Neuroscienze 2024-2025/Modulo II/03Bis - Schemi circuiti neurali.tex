@@ -1,0 +1,145 @@
+\documentclass[12pt]{article}
+\usepackage[italian]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage[margin=2cm]{geometry}
+\usepackage{subcaption}
+
+\title{Schemi Circuiti Neurali}
+\author{Orcam}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Elementi Fondamentali dei Circuiti}
+\begin{itemize}
+    \item \textbf{Neuroni afferenti}: Input (periferia $\rightarrow$ SNC)
+    \item \textbf{Neuroni efferenti}: Output (SNC $\rightarrow$ periferia)
+    \item \textbf{Neuroni di proiezione}: Collegano regioni diverse
+    \item \textbf{Interneuroni}: Circuiti locali (intra-regionali)
+\end{itemize}
+
+\section{Principi di Connessione}
+\subsection{Convergenza e Divergenza}
+\begin{itemize}
+    \item \textbf{Convergenza}: Molti input $\rightarrow$ Pochi output
+    \item \textbf{Divergenza}: Pochi input $\rightarrow$ Molti output
+    \item Esempio sistema visivo: 100M recettori $\rightarrow$ 1M gangli $\rightarrow$ miliardi corticali
+\end{itemize}
+
+% Spazio per immagine: Convergenza/divergenza (Pag. 4)
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{sistema_visivo}
+    \caption{Convergenza e divergenza nel sistema visivo}
+\end{figure}
+
+\section{Circuiti Eccitatori}
+\subsection{Eccitazione Feedforward}
+\begin{itemize}
+    \item Propagazione sequenziale: A $\rightarrow$ B $\rightarrow$ C
+    \item Meccanismo: Propagazione lineare
+    \item Funzione: Trasmissione informazioni
+\end{itemize}
+
+\subsection{Eccitazione Feedback}
+\begin{itemize}
+    \item Retroazione: Output $\rightarrow$ Rinforzo input
+    \item Meccanismo: Ripetizione
+    \item Funzione: Rinforzo segnale
+\end{itemize}
+
+\subsection{Eccitazione Ricorrente}
+\begin{itemize}
+    \item Auto-rinforzo: Neuroni si eccitano reciprocamente
+    \item Meccanismo: Amplificazione
+    \item Funzione: Stabilità rappresentazione
+\end{itemize}
+
+\subsection{Eccitazione Ricorrente Laterale}
+\begin{itemize}
+    \item Collegamento circuiti paralleli
+    \item Propagazione orizzontale (stesso livello)
+    \item Sincronizzazione attività
+\end{itemize}
+
+% Spazio per immagine: Schemi eccitatori (Pag. 5)
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{circuiti_eccitatori}
+    \caption{Schemi fondamentali di circuiti eccitatori}
+\end{figure}
+
+\section{Circuiti Inibitori}
+\subsection{Inibizione Feedforward}
+\begin{itemize}
+    \item Meccanismo: Eccitazione $\rightarrow$ Interneurone inibitorio $\rightarrow$ Inibizione
+    \item Funzione: Arresto/limitazione eccitazione
+\end{itemize}
+
+\subsection{Inibizione Feedback}
+\begin{itemize}
+    \item Meccanismo: Output $\rightarrow$ Interneurone inibitorio $\rightarrow$ Autoregolazione
+    \item Funzione: Normalizzazione output
+\end{itemize}
+
+\subsection{Disinibizione}
+\begin{itemize}
+    \item Meccanismo: Inibitore 1 $\rightarrow$ Inibitore 2 $\rightarrow$ Attivazione bersaglio
+    \item Funzione: Controllo a doppia negazione
+\end{itemize}
+
+\subsection{Inibizione Ricorrente/Laterale}
+\begin{itemize}
+    \item Inibizione trasversale: Circuiti paralleli si inibiscono
+    \item Amplificazione differenze
+    \item Creazione oscillazioni sincrone
+\end{itemize}
+
+% Spazio per immagine: Schemi inibitori (Pag. 10)
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{circuiti_inibitori}
+    \caption{Schemi fondamentali di circuiti inibitori}
+\end{figure}
+
+\section{Esempi Clinici}
+\subsection{Riflesso Patellare}
+\begin{itemize}
+    \item Arco riflesso monosinaptico
+    \item Componenti:
+    \begin{itemize}
+        \item Recettore sensoriale (muscolo estensore)
+        \item Neurone afferente
+        \item Motoneurone estensore (eccitazione diretta)
+        \item Interneurone inibitorio (muscolo flessore)
+    \end{itemize}
+    \item Funzione: Estensione gamba + rilassamento flessori
+\end{itemize}
+
+% Spazio per immagine: Riflesso patellare (Pag. 13-15)
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{riflesso_patellare}
+    \caption{Circuito del riflesso patellare con inibizione feedforward}
+\end{figure}
+
+\subsection{Circuito dei Gangli della Base}
+\begin{itemize}
+    \item Esempio di disinibizione
+    \item Meccanismo: Corteccia $\rightarrow$ Striato $\rightarrow$ Globo pallido $\rightarrow$ Talamo
+    \item Funzione: Controllo movimento
+\end{itemize}
+
+% Spazio per immagine: Disinibizione (Pag. 17)
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{circuito_disinibizione}
+    \caption{Circuito di disinibizione nei gangli della base}
+\end{figure}
+
+\end{document}

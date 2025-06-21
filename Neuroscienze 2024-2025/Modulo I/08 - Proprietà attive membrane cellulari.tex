@@ -1,0 +1,166 @@
+\documentclass{article}
+\usepackage[italian]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{siunitx}
+
+\title{Proprietà attive delle membrane cellulari}
+\author{Orcam}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+% Sezione 1: Proprietà passive vs attive
+\section{Proprietà elettriche delle membrane}
+\begin{itemize}
+\item \textbf{Passive}:
+  \begin{itemize}
+  \item Capacità (\(C_m \approx \SI{1}{\micro\farad\per\centi\meter\squared}\))
+  \item Resistenza (\(R_m\))
+  \item Risposta lineare (legge di Ohm)
+  \end{itemize}
+
+\item \textbf{Attive}:
+  \begin{itemize}
+  \item Canali ionici voltaggio-dipendenti
+  \item Generazione di potenziali d'azione
+  \item Risposta non lineare
+  \end{itemize}
+
+% Sezione 2: Potenziali elettrotonici
+\section{Potenziali elettrotonici}
+\begin{itemize}
+\item Risposta passiva a correnti sottosoglia:
+\[
+V(t) = V_{\infty} \left(1 - e^{-t/\tau}\right) \quad \text{con} \quad \tau = R_m C_m
+\]
+\begin{itemize}
+\item \(\tau\): Costante di tempo (tipicamente \SIrange{1}{20}{\milli\second})
+\end{itemize}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{elettrotonico.png}
+\caption{Carica del condensatore di membrana}
+\label{fig:elettrotonico}
+\end{figure}
+\end{itemize}
+
+% Sezione 3: Legge di Ohm nelle membrane
+\section{Relazione corrente-voltaggio}
+\[
+\Delta V_m = I_m R_m = \frac{I_m}{g_m}
+\]
+\begin{itemize}
+\item Linearità mantenuta solo in condizioni passive
+\item Deviazione durante attivazione canali voltaggio-dipendenti
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{ohm_curve.png}
+\caption{Curva I-V in condizioni passive e attive}
+\label{fig:ohm}
+\end{figure}
+\end{itemize}
+
+% Sezione 4: Potenziale d'azione
+\section{Il potenziale d'azione}
+\begin{itemize}
+\item Caratteristiche chiave:
+  \begin{itemize}
+  \item Soglia di attivazione (\(\approx \SI{-55}{\milli\volt}\))
+  \item Fase ascendente (apertura canali Na\(^+\))
+  \item Fase discendente (inattivazione Na\(^+\) + apertura K\(^+\))
+  \item Iperpolarizzazione postuma
+  \end{itemize}
+
+\item Proprietà:
+  \begin{itemize}
+  \item Legge del "tutto o nulla"
+  \item Inversione del potenziale (\(V_m \approx +\SI{60}{\milli\volt}\))
+  \item Durata: \(\sim\SI{1}{\milli\second}\) (neuroni)
+  \end{itemize}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{potenziale_azione.png}
+\caption{Fasi del potenziale d'azione}
+\label{fig:azione}
+\end{figure}
+\end{itemize}
+
+% Sezione 5: Canali ionici voltaggio-dipendenti
+\section{Canali voltaggio-dipendenti}
+\begin{itemize}
+\item Meccanismo di attivazione:
+  \begin{itemize}
+  \item Sensori di voltaggio (domini S4)
+  \item Apertura rapida (Na\(^+\)) vs lenta (K\(^+\))
+  \end{itemize}
+
+\item Equazione della conduttanza:
+\[
+g_{Na} = \bar{g}_{Na} \cdot m^3 h \quad;\quad g_K = \bar{g}_K \cdot n^4
+\]
+\begin{itemize}
+\item \(m, h, n\): Variabili di attivazione/inattivazione
+\end{itemize}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{canali_na_k.png}
+\caption{Dinamica dei canali Na\(^+\) e K\(^+\)}
+\label{fig:canali}
+\end{figure}
+\end{itemize}
+
+% Sezione 6: Metodi di studio
+\section{Tecniche sperimentali}
+\begin{itemize}
+\item \textbf{Current clamp}:
+  \begin{itemize}
+  \item Misura \(V_m\) in risposta a correnti iniettate
+  \item Ideale per studiare potenziali d'azione
+  \end{itemize}
+
+\item \textbf{Voltage clamp}:
+  \begin{itemize}
+  \item Mantiene \(V_m\) costante
+  \item Misura correnti ioniche (\(I = g \cdot \Delta V\))
+  \end{itemize}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.5\textwidth]{voltage_clamp.png}
+\caption{Schema del sistema voltage clamp}
+\label{fig:clamp}
+\end{figure}
+\end{itemize}
+
+% Sezione 7: Modello sperimentale
+\section{Assone gigante di calamaro}
+\begin{itemize}
+\item Caratteristiche: \begin{itemize}
+  \item Diametro: \(\sim\SI{800}{\micro\meter}\)
+  \item Facilità di manipolazione sperimentale
+  \end{itemize}
+
+\item Contributi chiave:
+  \begin{itemize}
+  \item Scoperta dei canali Na\(^+\)/K\(^+\) voltaggio-dipendenti
+  \item Modello per lo studio della conduzione assonica
+  \end{itemize}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.4\textwidth]{assone_calamaro.png}
+\caption{Assone gigante e sistema di registrazione}
+\label{fig:calamaro}
+\end{figure}
+\end{itemize}
+
+\end{document}

@@ -1,0 +1,160 @@
+\documentclass{article}
+\usepackage[italian]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{siunitx}
+
+\title{Potenziale di equilibrio e Proprietà passive delle membrane cellulari}
+\author{Orcam}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+% Sezione 1: Potenziale di equilibrio e Equazione di Nernst
+\section{Potenziale di equilibrio e Equazione di Nernst}
+\begin{itemize}
+\item Il potenziale di equilibrio (\(E_x\)) per uno ione è determinato dall'equazione di Nernst:
+\[
+E_x = \frac{RT}{zF} \ln \frac{[X]_e}{[X]_i} \quad \text{o, a 38°C:} \quad E_x = 0.061 \log \frac{[X]_e}{[X]_i}
+\]
+\begin{table}[h]
+\centering
+\begin{tabular}{lcc}
+\toprule
+Ione & \(E_x\) teorico & Concentrazioni (mM) \\
+\midrule
+K\(^+\) & -94 mV & 140 (int) / 4 (ext) \\
+Na\(^+\) & +65 mV & 10 (int) / 120 (ext) \\
+Cl\(^-\) & -90 mV & 4 (int) / 120 (ext) \\
+\bottomrule
+\end{tabular}
+\caption{Potenziali di equilibrio per i principali ioni}
+\end{table}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{Neuroscienze 2024-2025/Modulo I/Immagini Modulo I/Screenshot 2025-06-21 at 17-51-15 7. Potenziale di equilibrio_Proprietà passive membrane cellulari .pdf.png}
+\caption{Deviazione dalla previsione di Nernst a basse [K\(^+\)] esterne}
+\label{fig:nernst}
+\end{figure}
+\end{itemize}
+
+% Sezione 2: Equazione di Goldman-Hodgkin-Katz
+\section{Equazione di Goldman-Hodgkin-Katz (GHK)}
+\[
+V_m = \frac{RT}{F} \ln \frac{P_K[K^+]_e + P_{Na}[Na^+]_e + P_{Cl}[Cl^-]_i}{P_K[K^+]_i + P_{Na}[Na^+]_i + P_{Cl}[Cl^-]_e}
+\]
+\begin{itemize}
+\item Esempio con \(P_{Na} = 0.01 P_K\):
+\[
+V_m = 0.061 \log \frac{4 + 1.2}{140 + 0.1} \approx -96 \, \text{mV}
+\]
+
+\item Permeabilità relative:
+\begin{itemize}
+\item \(P_K : P_{Na} : P_{Cl} = 1 : 0.01 : 0.5\)
+\end{itemize}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{Neuroscienze 2024-2025/Modulo I/Immagini Modulo I/Screenshot 2025-06-21 at 17-52-06 7. Potenziale di equilibrio_Proprietà passive membrane cellulari .pdf.png}
+\caption{Confronto tra equazioni di Nernst e GHK}
+\label{fig:goldman}
+\end{figure}
+\end{itemize}
+
+% Sezione 3: Circuito equivalente della membrana
+\section{Proprietà passive: Circuito equivalente}
+\begin{itemize}
+\item Modello elettrico:
+\begin{itemize}
+\item \textbf{Capacità} (\(C_m \approx \SI{1}{\micro\farad\per\centi\meter\squared}\)): Doppio strato lipidico
+\item \textbf{Resistenze} (\(R\)): Canali ionici
+\end{itemize}
+
+\[
+\tau = R_m C_m \quad \text{(Costante di tempo, tipicamente 1-20 ms)}
+\]
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{Neuroscienze 2024-2025/Modulo I/Immagini Modulo I/Screenshot 2025-06-21 at 17-52-34 7. Potenziale di equilibrio_Proprietà passive membrane cellulari .pdf.png}
+\caption{Circuito equivalente: resistenze e capacità in parallelo}
+\label{fig:circuito}
+\end{figure}
+\end{itemize}
+
+% Sezione 4: Potenziali elettrotonici
+\section{Potenziali elettrotonici}
+\begin{itemize}
+\item Risposta passiva a correnti iniettate:
+\[
+V(t) = V_{\infty} \left(1 - e^{-t/\tau}\right)
+\]
+\begin{itemize}
+\item \(V_{\infty}\): Potenziale a regime
+\item \(\tau\): Tempo per raggiungere il 63\% di \(V_{\infty}\)
+\end{itemize}
+
+\item Proprietà:
+\begin{itemize}
+\item Decadimento esponenziale con la distanza
+\item Somma temporale/spaziale
+\end{itemize}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{Neuroscienze 2024-2025/Modulo I/Immagini Modulo I/Screenshot 2025-06-21 at 19-17-06 7. Potenziale di equilibrio_Proprietà passive membrane cellulari .pdf.png}
+\caption{Risposta della membrana a stimoli di corrente}
+\label{fig:elettrotonico}
+\end{figure}
+\end{itemize}
+
+% Sezione 5: Legge di Ohm e risposta passiva
+\section{Legge di Ohm nelle membrane}
+\[
+\Delta V_m = I_m R_m \quad \text{con} \quad R_m = \frac{1}{g_{tot}}
+\]
+\begin{itemize}
+\item Relazione lineare corrente-voltaggio:
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{Neuroscienze 2024-2025/Modulo I/Immagini Modulo I/Screenshot 2025-06-21 at 19-18-21 7. Potenziale di equilibrio_Proprietà passive membrane cellulari .pdf.png}
+\caption{Curva I-V per membrane passive}
+\label{fig:ohm}
+\end{figure}
+
+\item Parametri tipici:
+\begin{itemize}
+\item Resistenza specifica: \(\SI{1000}{\ohm\centi\meter\squared}\)
+\item Conduttanza \(K^+\): \(\SI{10}{\milli\siemens\per\centi\meter\squared}\)
+\end{itemize}
+\end{itemize}
+
+% Sezione 6: Ruolo della pompa Na+/K+
+\section{Ruolo della pompa Na\(^+\)/K\(^+\) ATPasi}
+\begin{itemize}
+\item Mantiene i gradienti ionici:
+\begin{itemize}
+\item 3 Na\(^+\) espulsi / 2 K\(^+\) introdotti per ATP
+\end{itemize}
+
+\item Contribuisce al \(\sim 10\%\) del \(V_m\) tramite:
+\begin{itemize}
+\item Elettrogenicità diretta
+\item Mantenimento gradienti per diffusione passiva
+\end{itemize}
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{Neuroscienze 2024-2025/Modulo I/Immagini Modulo I/Screenshot 2025-06-21 at 19-20-34 7. Potenziale di equilibrio_Proprietà passive membrane cellulari .pdf.png}
+\caption{Relazione ohmica tra voltaggio e corrente}
+\label{fig:pompa}
+\end{figure}
+\end{itemize}
+
+\end{document}

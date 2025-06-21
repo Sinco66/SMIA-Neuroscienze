@@ -1,0 +1,143 @@
+\documentclass[12pt]{article}
+\usepackage[italian]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage[margin=2cm]{geometry}
+\usepackage{subcaption}
+
+\title{Circuiti Neurali}
+\author{Orcam}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduzione ai Circuiti Neurali}
+\begin{itemize}
+    \item 100 miliardi di neuroni nel SNC umano
+    \item $\sim$1000 connessioni/neurone $\rightarrow$ 100.000 miliardi di sinapsi
+    \item Il neurone: unità di elaborazione delle informazioni
+    \item Computazione neurale: trasformazione input multipli in output singolo
+\end{itemize}
+
+% Spazio per immagine: Schema cervello e neurone (Pag. 3)
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{neurone_circuito}
+    \caption{Dal neurone al circuito neurale}
+\end{figure}
+
+\section{Integrazione Neurale}
+\subsection{Meccanismi di Sommazione}
+\begin{itemize}
+    \item \textbf{Sommazione spaziale}: combinazione di EPSP da sinapsi diverse
+    \item \textbf{Sommazione temporale}: combinazione di EPSP dalla stessa sinapsi in rapida successione
+    \item L'ampiezza della depolarizzazione determina la frequenza dei potenziali d'azione
+\end{itemize}
+
+% Spazio per immagine: Tipi di sinapsi (Pag. 8)
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{tipi_sinapsi}
+    \caption{Sinapsi asimmetriche (eccitatorie) e simmetriche (inibitorie)}
+\end{figure}
+
+\section{Diversità Neuronale}
+\subsection{Classi Morfologiche}
+\begin{itemize}
+    \item Bipolari, pseudounipolari, multipolari, unipolari
+    \item Cellule piramidali, stellate, a canestro, fusiformi
+\end{itemize}
+
+\subsection{Banche Dati Neuronali}
+\begin{itemize}
+    \item \textbf{NeuroMorpho.Org}: 147.000+ ricostruzioni digitali
+    \item \textbf{Allen Brain Atlas}: dati elettrofisiologici, morfologici e trascrittomici
+    \item \textbf{ModelDB}: modelli computazionali di neuroni
+\end{itemize}
+
+% Spazio per immagine: Diversità neuronale (Pag. 16)
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{diversita_neuronale}
+    \caption{Esempi di ricostruzioni digitali da NeuroMorpho.Org}
+\end{figure}
+
+\section{Elementi dei Circuiti Neurali}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{lp{8cm}}
+        \toprule
+        \textbf{Elemento} & \textbf{Funzione} \\
+        \midrule
+        Neuroni afferenti & Portano informazioni \textit{verso} una regione (input) \\
+        Neuroni efferenti & Portano informazioni \textit{da} una regione (output) \\
+        Neuroni di proiezione & Collegano regioni diverse (inter-regionali) \\
+        Interneuroni & Circuiti locali (intra-regionali) \\
+        \bottomrule
+    \end{tabular}
+    \caption{Componenti fondamentali dei circuiti neurali}
+\end{table}
+
+\section{Principi di Connessione}
+\subsection{Convergenza e Divergenza}
+\begin{itemize}
+    \item \textbf{Convergenza}: Molti neuroni presinaptici $\rightarrow$ Pochi postsinaptici
+    \item \textbf{Divergenza}: Pochi neuroni presinaptici $\rightarrow$ Molti postsinaptici
+    \item Esempio: Sistema visivo (100M recettori $\rightarrow$ 1M gangli $\rightarrow$ miliardi corticali)
+\end{itemize}
+
+% Spazio per immagine: Convergenza/divergenza (Pag. 25)
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{convergenza_divergenza}
+    \caption{Convergenza e divergenza nel sistema visivo}
+\end{figure}
+
+\section{Motivi Circuitali Fondamentali}
+\subsection{Circuiti Eccitatori}
+\begin{itemize}
+    \item Convergenza
+    \item Divergenza
+    \item Feedforward
+    \item Feedback
+    \item Ricorrenza laterale
+\end{itemize}
+
+\subsection{Circuiti Inibitori}
+\begin{itemize}
+    \item Inibizione feedforward
+    \item Inibizione feedback
+    \item Inibizione ricorrente
+    \item Inibizione laterale
+    \item Disinibizione
+\end{itemize}
+
+% Spazio per immagine: Schemi circuiti (Pag. 26-27)
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{circuiti_eccitatori}
+        \caption{Circuiti eccitatori}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{circuiti_inibitori}
+        \caption{Circuiti inibitori}
+    \end{subfigure}
+    \caption{Schemi fondamentali di circuiti neurali}
+\end{figure}
+
+\section{Strumenti Computazionali}
+\begin{itemize}
+    \item \textbf{Neuronify}: Simulatore educativo di reti neurali
+    \item \textbf{Allen SDK}: Accesso programmatico a dati neuronali
+    \item \textbf{ModelDB}: Repository di modelli computazionali
+\end{itemize}
+
+\end{document}

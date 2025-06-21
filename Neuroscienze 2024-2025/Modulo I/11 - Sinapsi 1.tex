@@ -1,0 +1,220 @@
+\documentclass{article}
+\usepackage[italian]{babel}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage[margin=1in]{geometry}
+
+\title{Sinapsi I}
+\author{Orcam}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Segnali Nervosi}
+\subsection{Potenziali Elettrotonici vs Potenziali d'Azione}
+\begin{table}[h]
+\centering
+\caption{Confronto tra potenziali elettrotonici e potenziali d'azione}
+\begin{tabular}{p{6cm}p{6cm}}
+\toprule
+\textbf{Potenziali Elettrotonici} & \textbf{Potenziali d'Azione} \\
+\midrule
+• Ampiezza graduata (dipende dall'intensità dello stimolo) & • Fenomeno "tutto o nulla" \\
+• Decadono con la distanza & • Si autorigenerano (mantengono ampiezza) \\
+• Si sommano temporalmente/spazialmente & • Non sommabili (periodo refrattario) \\
+• Seguono la legge di Ohm & • Uguali in ampiezza per stesso neurone \\
+& • Codifica intensità nella frequenza \\
+\bottomrule
+\end{tabular}
+\label{tab:potenziali}
+\end{table}
+
+% Spazio per Figura 1: Propagazione segnale nervoso
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{figura1_propagazione}
+\caption{Alternanza di potenziali elettrotonici e d'azione nella trasmissione del segnale}
+\label{fig:propagazione}
+\end{figure}
+
+\section{Reti Neurali}
+\subsection{Complessità delle Reti}
+\begin{itemize}
+\item Circuiti neurali con diverse complessità: cerebellari, spinali, corticali
+\item Modelli di integrazione spaziale non lineare nei dendriti
+\end{itemize}
+
+\subsection{Modelli Computazionali}
+\begin{itemize}
+\item \textbf{Perceptron (singolo strato)}:
+  \begin{equation*}
+    f(x) = \begin{cases} 
+      1 & \text{se } \sum w_i x_i + b > 0 \\
+      0 & \text{se } \sum w_i x_i + b < 0 
+    \end{cases}
+  \end{equation*}
+\item \textbf{Multi-Layer Perceptron}: 
+  \begin{itemize}
+  \item Strati nascosti per estrarre features gerarchiche
+  \item Esempio: riconoscimento di volti (pixel $\rightarrow$ bordi $\rightarrow$ features complesse)
+  \end{itemize}
+\end{itemize}
+
+% Spazio per Figura 2: Modelli perceptron
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{figura2_perceptron}
+\caption{Architettura di perceptron singolo e multi-strato}
+\label{fig:perceptron}
+\end{figure}
+
+\section{Storia delle Sinapsi}
+\subsection{Teorie a Confronto}
+\begin{itemize}
+\item \textbf{Teoria Reticolare} (Golgi): cellule nervose unite da ponti protoplasmatici
+\item \textbf{Teoria Neuronale} (Cajal): cellule indipendenti che comunicano tramite giunzioni specializzate
+\item Conferma della teoria neuronale con la colorazione di Golgi-Cajal
+\end{itemize}
+
+% Spazio per Figura 3: Teorie sinaptiche
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{figura3_teorie}
+\caption{Confronto tra teoria reticolare e teoria neuronale}
+\label{fig:teorie}
+\end{figure}
+
+\section{Proprietà delle Sinapsi}
+\subsection{Convergenza e Divergenza}
+\begin{itemize}
+\item \textbf{Convergenza}: Molti neuroni presinaptici $\rightarrow$ un neurone postsinaptico
+\item \textbf{Divergenza}: Un neurone presinaptico $\rightarrow$ molti neuroni postsinaptici
+\end{itemize}
+
+\subsection{Tipi di Sinapsi}
+\begin{itemize}
+\item \textbf{Asso-somatiche}: Tra assone e corpo cellulare
+\item \textbf{Asso-dendritiche}: Tra assone e dendriti
+\item \textbf{Asso-assoniche}: Tra assoni (modulazione)
+\end{itemize}
+
+% Spazio per Figura 4: Tipi di sinapsi
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{figura4_tipi_sinapsi}
+\caption{Localizzazione e tipi di sinapsi}
+\label{fig:tipi_sinapsi}
+\end{figure}
+
+\section{Sinapsi Elettriche}
+\subsection{Struttura e Funzione}
+\begin{itemize}
+\item \textbf{Gap junctions}: Canali idrofilici formati da connessine
+\item \textbf{Meccanismo}: Passaggio diretto di ioni e piccole molecole (<500 Da)
+\item \textbf{Vantaggi}: Velocità, sincronizzazione
+\item \textbf{Svantaggi}: Dispersione di carica, bidirezionalità
+\end{itemize}
+
+% Spazio per Figura 5: Sinapsi elettriche
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.6\textwidth]{figura5_sinapsi_elettriche}
+\caption{Struttura delle gap junctions e trasmissione elettrica}
+\label{fig:elettriche}
+\end{figure}
+
+\section{Sinapsi Chimiche}
+\subsection{Struttura}
+\begin{itemize}
+\item \textbf{Elementi chiave}:
+  \begin{itemize}
+  \item Vescicole sinaptiche
+  \ta Fessura sinaptica (20nm)
+  \item Recettori postsinaptici
+  \end{itemize}
+\item \textbf{Tempi}: Risposta postsinaptica $\sim$1 ms
+\end{itemize}
+
+\subsection{Neurotrasmettitori}
+\begin{table}[h]
+\centering
+\caption{Principali neurotrasmettitori e funzioni}
+\begin{tabular}{ll}
+\toprule
+\textbf{Neurotrasmettitore} & \textbf{Funzione} \\
+\midrule
+Glutammato & Memoria, eccitazione \\
+GABA & Inibizione, calma \\
+Dopamina & Piacere, motivazione \\
+Serotonina & Umore, sonno \\
+Acetilcolina & Apprendimento, contrazione muscolare \\
+Endorfine & Analgesia, euforia \\
+\bottomrule
+\end{tabular}
+\label{tab:neurotrasmettitori}
+\end{table}
+
+% Spazio per Figura 6: Sinapsi chimiche
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{figura6_sinapsi_chimiche}
+\caption{Meccanismo di trasmissione chimica}
+\label{fig:chimiche}
+\end{figure}
+
+\section{Rilascio dei Neurotrasmettitori}
+\subsection{Fasi del Ciclo Sinaptico}
+\begin{enumerate}
+\item \textbf{Sintesi}:
+  \begin{itemize}
+  \item Neurotrasmettitori a basso PM: sintesi nel bottone sinaptico
+  \item Neuropeptidi: sintesi nel soma, trasporto assonale
+  \end{itemize}
+  
+\item \textbf{Ancoraggio e priming}: 
+  \begin{itemize}
+  \item Interazione proteine SNARE (v-SNARE/t-SNARE)
+  \item Ruolo della sinaptotagmina (sensore Ca$^{2+}$)
+  \end{itemize}
+
+\item \textbf{Rilascio}:
+  \begin{itemize}
+  \item Apertura canali Ca$^{2+}$ voltaggio-dipendenti
+  \item Fusione vescicolare mediata da Ca$^{2+}$
+  \end{itemize}
+
+\item \textbf{Recupero}:
+  \begin{itemize}
+  \item Endocitosi e riciclo vescicolare (30s-1min)
+  \item Ruolo della dinamina
+  \end{itemize}
+\end{enumerate}
+
+% Spazio per Figura 7: Ciclo sinaptico
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.9\textwidth]{figura7_ciclo_sinaptico}
+\caption{Fasi del ciclo di rilascio e recupero delle vescicole}
+\label{fig:ciclo}
+\end{figure}
+
+\subsection{Mobilizzazione Vescicole}
+\begin{itemize}
+\item Fosforilazione della sinapsina da parte di chinasi Ca$^{2+}$-dipendenti
+\item Rilascio delle vescicole dal citoscheletro di actina
+\item Migrazione verso la membrana presinaptica
+\end{itemize}
+
+% Spazio per Figura 8: Mobilizzazione vescicole
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.8\textwidth]{figura8_mobilizzazione}
+\caption{Meccanismo di mobilizzazione delle vescicole di riserva}
+\label{fig:mobilizzazione}
+\end{figure}
+
+\end{document}

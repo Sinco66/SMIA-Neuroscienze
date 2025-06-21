@@ -1,0 +1,202 @@
+\documentclass[12pt]{article}
+\usepackage[italian]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage[margin=2cm]{geometry}
+\usepackage{subcaption}
+
+\title{Neurotrasmettitori: Fondamenti di Neuroscienze}
+\author{Orcam}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduzione alle Reti Neurali}
+\begin{itemize}
+    \item 100 miliardi di neuroni con $\sim$1000 trilioni di sinapsi
+    \item Neuroscienze: disciplina multidisciplinare che integra:
+    \begin{itemize}
+        \item Neuroanatomia, Neurofisiologia, Neurochimica
+        \item Psicologia, Psichiatria, Neurologia
+    \end{itemize}
+    \item Interazione con l'IA:
+    \begin{itemize}
+        \item Neuroscienze $\rightarrow$ Ispirazione algoritmi IA
+        \item IA $\rightarrow$ Analisi dati neuroscientifici
+    \end{itemize}
+\end{itemize}
+
+% Spazio per immagine: Reti neurali biologiche vs artificiali (Pag. 5)
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{reti_neurali_comparazione}
+    \caption{Confronto tra reti neurali biologiche e artificiali}
+\end{figure}
+
+\section{Fondamenti di Neurotrasmissione}
+\subsection{Definizione di Neurotrasmettitore}
+Sostanza che:
+\begin{enumerate}
+    \item È presente nel neurone presinaptico
+    \item Viene rilasciata in modo Ca$^{2+}$-dipendente
+    \item Lega recettori specifici postsinaptici
+\end{enumerate}
+
+\subsection{Meccanismo di Rilascio}
+\begin{enumerate}
+    \item Potenziale d'azione invade terminazione presinaptica
+    \item Apertura canali Ca$^{2+}$ voltaggio-dipendenti
+    \item Fusione vescicole con membrana presinaptica
+    \item Rilascio neurotrasmettitore per esocitosi
+\end{enumerate}
+
+% Spazio per immagine: Processo sinaptico (Pag. 11)
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{meccanismo_sinaptico}
+    \caption{Meccanismo di trasmissione sinaptica}
+\end{figure}
+
+\subsection{Recettori}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{lll}
+        \toprule
+        \textbf{Tipo} & \textbf{Meccanismo} & \textbf{Esempi} \\
+        \midrule
+        Ionotropico & Canali ionici rapidi & nAChR, GABA$_A$ \\
+        Metabotropico & Secondi messaggeri (lenti) & mAChR, rec. dopamina \\
+        \bottomrule
+    \end{tabular}
+    \caption{Classificazione recettori}
+\end{table}
+
+\section{Principali Neurotrasmettitori}
+\subsection{Acetilcolina (ACh)}
+\begin{itemize}
+    \item Primo NT identificato
+    \item Recettori:
+    \begin{itemize}
+        \item Nicotinici (nAChR): ionotropici
+        \item Muscarinici (mAChR): metabotropici
+    \end{itemize}
+    \item Ruolo: controllo muscolare, memoria
+    \item Patologia: Miastenia Gravis (autoimmune)
+\end{itemize}
+
+% Spazio per immagine: Recettori nicotinici (Pag. 25)
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{recettori_acetilcolina}
+    \caption{Struttura recettori nicotinici}
+\end{figure}
+
+\subsection{Glutammato}
+\begin{itemize}
+    \item NT eccitatorio principale
+    \item Recettori ionotropici:
+    \begin{itemize}
+        \item AMPA, NMDA, Kainato
+        \item NMDA: permeabile a Ca$^{2+}$, bloccato da Mg$^{2+}$
+    \end{itemize}
+    \item Ruolo: apprendimento, plasticità sinaptica
+\end{itemize}
+
+\subsection{GABA e Glicina}
+\begin{itemize}
+    \item NT inibitori principali
+    \item GABA$_A$: canale per Cl$^-$ (ionotropico)
+    \item Durante sviluppo: effetto eccitatorio
+    \item Farmaci: benzodiazepine, barbiturici
+\end{itemize}
+
+\subsection{Ammine Biogene}
+\begin{table}[h]
+    \centering
+    \begin{tabular}{lll}
+        \toprule
+        \textbf{NT} & \textbf{Recettori} & \textbf{Funzione} \\
+        \midrule
+        Dopamina & D1-like (G$_s$), D2-like (G$_i$) & Movimento, ricompensa \\
+        Serotonina & 7 famiglie (5-HT$_{1-7}$) & Umore, sonno \\
+        Noradrenalina & $\alpha$, $\beta$ adrenergici & Attenzione, stress \\
+        Istamina & H$_{1-4}$ & Veglia, allergie \\
+        \bottomrule
+    \end{tabular}
+    \caption{Ammine biogene e loro funzioni}
+\end{table}
+
+% Spazio per immagine: Metabolismo dopamina (Pag. 48)
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.7\textwidth]{metabolismo_dopamina}
+    \caption{Via metabolica della dopamina}
+\end{figure}
+
+\section{Altri Neurotrasmettitori}
+\subsection{Peptidi}
+\begin{itemize}
+    \item Esempi: encefaline, sostanza P, ossitocina
+    \item Rilascio lento e diffuso
+    \item Funzione: neuromodulazione, dolore, emozioni
+    \item Degradati da peptidasi
+\end{itemize}
+
+\subsection{Non Convenzionali}
+\begin{itemize}
+    \item Endocannabinoidi:
+    \begin{itemize}
+        \item Retrograde signaling
+        \item Recettori CB1 (SNC), CB2 (periferico)
+    \end{itemize}
+    \item NO (monossido di azoto):
+    \begin{itemize}
+        \item Diffusione trans-membrana
+        \item Attiva guanilato ciclasi
+    \end{itemize}
+\end{itemize}
+
+\section{Farmacologia}
+\subsection{Meccanismi d'Azione}
+\begin{itemize}
+    \item Agonisti: mimano l'NT (es. nicotina per nAChR)
+    \item Antagonisti: bloccano l'NT (es. curaro per nAChR)
+    \item Modificano: sintesi, rilascio, ricaptazione, degradazione
+\end{itemize}
+
+\subsection{Esempi Clinici}
+\begin{itemize}
+    \item Miastenia Gravis: anticorpi anti-nAChR
+    \item Cocaina: inibisce DAT (dopamina)
+    \item SSRIs: inibiscono ricaptazione serotonina
+    \item Benzodiazepine: potenziano GABA$_A$
+\end{itemize}
+
+% Spazio per immagine: Agonisti/antagonisti (Pag. 31)
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{farmaci_meccanismo}
+    \caption{Meccanismi d'azione di farmaci}
+\end{figure}
+
+\section{Connessioni con l'Intelligenza Artificiale}
+\begin{itemize}
+    \item Analogie:
+    \begin{itemize}
+        \item Sinapsi biologiche $\leftrightarrow$ Pesi nelle reti neurali
+        \item Eccitazione/inibizione $\leftrightarrow$ Pesi positivi/negativi
+    \end{itemize}
+    \item Applicazioni IA in neuroscienze:
+    \begin{itemize}
+        \item Drug discovery accelerato
+        \item Simulazioni binding molecolare
+        \item Medicina personalizzata
+    \end{itemize}
+    \item Strumenti educativi: Neuronify (simulazione reti)
+\end{itemize}
+
+\end{document}
